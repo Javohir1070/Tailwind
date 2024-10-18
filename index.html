@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" href="./images/logo-link.png">
+    <title>Tailwind</title>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="bg-[#6244A3] py-[14px] relative">
+            <div class="containers mx-auto flex items-center justify-center gap-2">
+                <p class="text-white  font-normal text-[14px] leading-[21px]">Free worldwide shipping for orders over $55.</p>
+                <a class="text-white  font-normal text-[14px] leading-[21px]" href="#">Shop now</a>
+            </div>
+            <img class="absolute top-0 bottom-0 my-auto right-10 cursor-pointer" src="./images/img.svg" alt="img" width="32" height="32">
+        </div> 
+        <div class="bg-white relative containers mx-auto flex items-center justify-center">
+            <ul class="flex items-center">
+                <li>
+                    <a class="text-[#697586] inline-block py-6 px-[15px] text-[16px] leading-[24px]" href="#">Products</a>
+                </li>
+                <li>
+                    <a class="text-[#697586] inline-block py-6 px-[15px] text-[16px] leading-[24px]" href="#">Story</a>
+                </li>
+                <li>
+                    <a class="text-[#697586] inline-block py-6 px-[15px] text-[16px] leading-[24px]" href="#">Blog</a>
+                </li>
+                <li>
+                    <a class="text-[#697586] inline-block py-6 px-[15px] text-[16px] leading-[24px]" href="#">Collections</a>
+                </li>
+                <li>
+                    <a class="text-[#697586] inline-block py-6 px-[15px] text-[16px] leading-[24px]" href="#">Contact</a>
+                </li>
+                
+               
+            </ul>
+            <div class="flex absolute top-0 bottom-0 my-auto right-[70px] items-center gap-2 ">
+                <button class="w-[100px] py-[6px] border-[1px] border-[#CDD5DF] rounded-[64px] flex items-center justify-center gap-2 ">
+                    <img src="./images/icon.svg" alt="icon" width="20" height="20">
+                    <span class="text-[#202939] text-[16px] leading-[24px]">Cart</span></button>
+                <button class="w-[119px] py-[9px] bg-[#CF4D74] text-white text-center text-[16px] leading-[24px] rounded-[64px]">Subscribe</button>
+            </div>
+         
+        </div>
+    </header>
+
+    <main>
+        <section class=" mb-[206px]"> 
+            <div class="flex items-center justify-between containers mx-auto bg-[#e9ebed]">
+                <div class="w-[560px] ml-[80px] ">
+                    <h1 class="text-[56px] leading-[67px] text-[#3C2769] mb-[28px]">Hydrated skin in 3 easy steps</h1>
+                    <p class="text-[20px] leading-[30px] text-[#3C2769] mb-[37px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique duis Cursus mi quis viverra ornare.</p>
+                    <button class=" w-[143px] py-[17px] bg-[#CF4D74]  text-[16px] leading-[24px] text-white rounded-[64px]" >Shop now</button>
+                    <button class=" w-[143px] py-[17px] bg-white  text-[16px] leading-[24px] text-[#202939] border-[1px] border-[#CDD5DF] rounded-[64px] ml-[16px] mb-[209px]" >Our story</button>
+                    <strong class="block text-[14px] leading-[21px] text-[#3C2769] mb-[24px]">Trusted by the world's best companies</strong>
+                    <div class="flex items-center gap-[30px]">
+                        <img src="./images/logo-img1.svg" alt="img" width="124" height="24">
+                        <img src="./images/logo-img2.svg" alt="img" width="124" height="24">
+                        <img src="./images/logo-img3.svg" alt="img" width="124" height="24">
+                    </div>
+                </div>
+                <img src="./images/section-img.png" alt="img" width="720" height="790">
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {   
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
+</body>
+</html>
